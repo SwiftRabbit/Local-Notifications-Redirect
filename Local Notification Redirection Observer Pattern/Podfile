@@ -6,4 +6,3 @@ use_frameworks!
 target 'Notification Redirection' do
     pod 'SwiftyJSON'
 end
-

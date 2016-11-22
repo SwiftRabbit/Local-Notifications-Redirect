@@ -23,25 +23,25 @@ class SplashScreenVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    override func viewWillAppear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.catchIt), name: "myNotif", object: nil)
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.catchIt), name: NSNotification.Name(rawValue: "myNotif"), object: nil)
     }
 
-    override func viewDidAppear(animated: Bool) {
-        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        if prefs.valueForKey("startUpNotif") != nil{
-            let userInfo: [NSObject : AnyObject] = ["inactive": "inactive"]
-            NSNotificationCenter.defaultCenter().postNotificationName("myNotif", object: nil, userInfo: userInfo as [NSObject : AnyObject])
+    override func viewDidAppear(_ animated: Bool) {
+        let prefs:UserDefaults = UserDefaults.standard
+        if prefs.value(forKey: "startUpNotif") != nil{
+            let userInfo: [AnyHashable: Any] = ["inactive": "inactive"]
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "myNotif"), object: nil, userInfo: userInfo as [AnyHashable: Any])
         }
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
     }
     
-    @IBAction func btnAction(sender: AnyObject) {
+    @IBAction func btnAction(_ sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc: OtherVC = storyboard.instantiateViewControllerWithIdentifier("OtherVC") as! OtherVC
+        let vc: OtherVC = storyboard.instantiateViewController(withIdentifier: "OtherVC") as! OtherVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

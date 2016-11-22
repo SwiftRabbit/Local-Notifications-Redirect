@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EE0652487C7B1485950EF27 /* Pods_Notification_Redirection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA2C85BB069EAE981B141C8 /* Pods_Notification_Redirection.framework */; };
+		19B881C86CA187453A3E7608 /* Pods_Notification_Redirection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591E8026F7EEE44330427ECE /* Pods_Notification_Redirection.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7B642C821D1D8558003F6F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B642C811D1D8558003F6F38 /* AppDelegate.swift */; };
 		7B642C841D1D8558003F6F38 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B642C831D1D8558003F6F38 /* SplashScreenVC.swift */; };
 		7B642C871D1D8558003F6F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B642C851D1D8558003F6F38 /* Main.storyboard */; };
@@ -17,10 +17,26 @@
 		7B642C961D1DA225003F6F38 /* extensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B642C951D1DA225003F6F38 /* extensionUIViewController.swift */; };
 		7B642C981D1DA3D1003F6F38 /* RedirectAppActiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B642C971D1DA3D1003F6F38 /* RedirectAppActiveVC.swift */; };
 		7B642C9A1D1DA442003F6F38 /* RedirectAppInactiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B642C991D1DA442003F6F38 /* RedirectAppInactiveVC.swift */; };
+		B492A2B31DE3ECE800CFF151 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B492A2B21DE3ECE800CFF151 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B492A2AE1DE3EB1E00CFF151 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1BA2C85BB069EAE981B141C8 /* Pods_Notification_Redirection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notification_Redirection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FC0B558D25F317649E08DA6 /* Pods-Notification Redirection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notification Redirection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notification Redirection/Pods-Notification Redirection.debug.xcconfig"; sourceTree = "<group>"; };
+		15891F25D346CAE01C8E1FA0 /* Pods-Notification Redirection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notification Redirection.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notification Redirection/Pods-Notification Redirection.release.xcconfig"; sourceTree = "<group>"; };
+		591E8026F7EEE44330427ECE /* Pods_Notification_Redirection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notification_Redirection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B642C7E1D1D8557003F6F38 /* Notification Redirection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notification Redirection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B642C811D1D8558003F6F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B642C831D1D8558003F6F38 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
@@ -32,8 +48,7 @@
 		7B642C951D1DA225003F6F38 /* extensionUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensionUIViewController.swift; sourceTree = "<group>"; };
 		7B642C971D1DA3D1003F6F38 /* RedirectAppActiveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedirectAppActiveVC.swift; sourceTree = "<group>"; };
 		7B642C991D1DA442003F6F38 /* RedirectAppInactiveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedirectAppInactiveVC.swift; sourceTree = "<group>"; };
-		8FFED51F25B55AA1460B1820 /* Pods-Notification Redirection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notification Redirection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notification Redirection/Pods-Notification Redirection.debug.xcconfig"; sourceTree = "<group>"; };
-		D55DB2C6E753F6A5B9E9B416 /* Pods-Notification Redirection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notification Redirection.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notification Redirection/Pods-Notification Redirection.release.xcconfig"; sourceTree = "<group>"; };
+		B492A2B21DE3ECE800CFF151 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Notification_Redirection-cwgdgoyalgldfidralwbihqvfpjz/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EE0652487C7B1485950EF27 /* Pods_Notification_Redirection.framework in Frameworks */,
+				B492A2B31DE3ECE800CFF151 /* SwiftyJSON.framework in Frameworks */,
+				19B881C86CA187453A3E7608 /* Pods_Notification_Redirection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +69,8 @@
 			children = (
 				7B642C801D1D8558003F6F38 /* Notification Redirection */,
 				7B642C7F1D1D8557003F6F38 /* Products */,
-				DD4E6492884EDECCF5ABCC62 /* Pods */,
-				9EED3A9C69396EBC14094340 /* Frameworks */,
+				88BAE321FC895C0A293D0664 /* Pods */,
+				9BD1B31E3740890A11702B95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,21 +99,22 @@
 			path = "Notification Redirection";
 			sourceTree = "<group>";
 		};
-		9EED3A9C69396EBC14094340 /* Frameworks */ = {
+		88BAE321FC895C0A293D0664 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1BA2C85BB069EAE981B141C8 /* Pods_Notification_Redirection.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DD4E6492884EDECCF5ABCC62 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8FFED51F25B55AA1460B1820 /* Pods-Notification Redirection.debug.xcconfig */,
-				D55DB2C6E753F6A5B9E9B416 /* Pods-Notification Redirection.release.xcconfig */,
+				0FC0B558D25F317649E08DA6 /* Pods-Notification Redirection.debug.xcconfig */,
+				15891F25D346CAE01C8E1FA0 /* Pods-Notification Redirection.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9BD1B31E3740890A11702B95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B492A2B21DE3ECE800CFF151 /* SwiftyJSON.framework */,
+				591E8026F7EEE44330427ECE /* Pods_Notification_Redirection.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,12 +124,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B642C901D1D8558003F6F38 /* Build configuration list for PBXNativeTarget "Notification Redirection" */;
 			buildPhases = (
-				C1A4F0B66AE9F36391E91E2B /* Check Pods Manifest.lock */,
+				CE1677325B39C33F73055AE2 /* [CP] Check Pods Manifest.lock */,
 				7B642C7A1D1D8557003F6F38 /* Sources */,
 				7B642C7B1D1D8557003F6F38 /* Frameworks */,
 				7B642C7C1D1D8557003F6F38 /* Resources */,
-				8B3F5966065A824C290AC59D /* Embed Pods Frameworks */,
-				BC8E922B3AD568AC4D894494 /* Copy Pods Resources */,
+				D11B097E34A48C85C3796250 /* [CP] Embed Pods Frameworks */,
+				CE1C7B419F214E2D48E3CCFA /* [CP] Copy Pods Resources */,
+				B492A2AE1DE3EB1E00CFF151 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +153,8 @@
 				TargetAttributes = {
 					7B642C7D1D1D8557003F6F38 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = X3A2YW4PWU;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -170,29 +190,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8B3F5966065A824C290AC59D /* Embed Pods Frameworks */ = {
+		CE1677325B39C33F73055AE2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notification Redirection/Pods-Notification Redirection-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		BC8E922B3AD568AC4D894494 /* Copy Pods Resources */ = {
+		CE1C7B419F214E2D48E3CCFA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,19 +220,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notification Redirection/Pods-Notification Redirection-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C1A4F0B66AE9F36391E91E2B /* Check Pods Manifest.lock */ = {
+		D11B097E34A48C85C3796250 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notification Redirection/Pods-Notification Redirection-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -340,26 +360,30 @@
 		};
 		7B642C911D1D8558003F6F38 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FFED51F25B55AA1460B1820 /* Pods-Notification Redirection.debug.xcconfig */;
+			baseConfigurationReference = 0FC0B558D25F317649E08DA6 /* Pods-Notification Redirection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X3A2YW4PWU;
 				INFOPLIST_FILE = "Notification Redirection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SR.Notification-Redirection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7B642C921D1D8558003F6F38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D55DB2C6E753F6A5B9E9B416 /* Pods-Notification Redirection.release.xcconfig */;
+			baseConfigurationReference = 15891F25D346CAE01C8E1FA0 /* Pods-Notification Redirection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X3A2YW4PWU;
 				INFOPLIST_FILE = "Notification Redirection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SR.Notification-Redirection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
