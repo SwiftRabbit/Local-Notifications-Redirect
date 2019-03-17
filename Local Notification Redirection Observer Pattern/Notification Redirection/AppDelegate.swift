@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -25,11 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let prefs: UserDefaults = UserDefaults.standard
         if let remoteNotification = launchOptions?[UIApplicationLaunchOptionsKey.remoteNotification] as? NSDictionary {
             prefs.set(remoteNotification as! [AnyHashable: Any], forKey: "startUpNotif")
-            prefs.synchronize()
-        }
-        else if launchOptions?[UIApplicationLaunchOptionsKey.localNotification] != nil {
+        } else if launchOptions?[UIApplicationLaunchOptionsKey.localNotification] != nil {
             prefs.set("SOMESTRING", forKey: "startUpNotif")
-            prefs.synchronize()
         }
 
         return true
@@ -43,6 +39,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        // https://stackoverflow.com/questions/40808072/when-and-why-should-you-use-nsuserdefaultss-synchronize-method
+        UserDefaults.standard.synchronize() // Has to be called at that particular place
         
         let localNotification = UILocalNotification()
         localNotification.fireDate = Date(timeIntervalSinceNow: 5)

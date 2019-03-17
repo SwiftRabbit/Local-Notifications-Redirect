@@ -8,21 +8,18 @@
 
 import UIKit
 
-extension UIViewController{
+extension UIViewController {
     
     func catchIt(_ userInfo: Notification){
         
+        let prefs: UserDefaults = UserDefaults.standard
+        prefs.removeObject(forKey: "startUpNotif")
+        
         if userInfo.userInfo?["userInfo"] != nil{
-            let prefs: UserDefaults = UserDefaults.standard
-            prefs.removeObject(forKey: "startUpNotif")
-            prefs.synchronize()
-            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc: RedirectAppInactiveVC = storyboard.instantiateViewController(withIdentifier: "RedirectAppInactiveVC") as! RedirectAppInactiveVC
             self.navigationController?.pushViewController(vc, animated: true)
-
-        }
-        else{
+        } else {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc: RedirectAppActiveVC = storyboard.instantiateViewController(withIdentifier: "RedirectAppActiveVC") as! RedirectAppActiveVC
             self.navigationController?.pushViewController(vc, animated: true)
